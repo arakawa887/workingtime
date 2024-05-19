@@ -1,0 +1,8 @@
+.topic {
+  margin: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
