@@ -28,11 +28,22 @@ tr{
 main{
   background-color: gainsboro;
 }
-svg {
-  /*paginateメソッドの矢印の大きさ調整のために追加*/
-  width: 30px;
-  height: 30px;
+ul{
+  display: flex;
+  justify-content: center;
 }
-.link{
+.page-item{
+  display: block;
+  width: 20px;
+  height: 20px;
   text-align: center;
+  margin: 10px 1px 30px 1px;
+  text-decoration: none;
+  background-color: azure;
+}
+.active{
+  background-color: mediumturquoise;
+}
+.page-link{
+  text-decoration:none;
 }
