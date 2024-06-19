@@ -603,3 +603,23 @@ textarea,
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  width: 50%;
+}
+.change{
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.attendance,.logout,.stamp{
+  margin: 20px;
+}
+.stamp-form__button-submit,.attendance-form__button-submit,.logout-form__button-submit{
+  border: none;
+  background: transparent;
+}

@@ -1,0 +1,43 @@
+
+h2{
+  text-align: center;
+}
+
+.stamps{
+  background-color: gainsboro;
+  position: relative;
+height: 300px;
+}
+
+
+.work-start-button{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 30%;
+  height: 30%;
+}
+
+.finish-button{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 30%;
+  height: 30%;
+}
+
+.break-start-button{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 30%;
+  height: 30%;
+}
+
+.break-finish-button{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 30%;
+  height: 30%;
+}

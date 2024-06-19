@@ -1,0 +1,38 @@
+.date{
+  display: block;
+}
+.date_change{
+  border: 1px solid #242a39aa;
+  text-decoration: none;
+  width: 20px;
+  display: block;
+  margin: 0px 10px;
+  text-align: center;
+}
+.date-handle{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+tr{
+  border-top: 1px solid #221414c6;
+}
+table{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+tr{
+  height: 50px;
+}
+main{
+  background-color: gainsboro;
+}
+svg {
+  /*paginateメソッドの矢印の大きさ調整のために追加*/
+  width: 30px;
+  height: 30px;
+}
+.link{
+  text-align: center;
+}
