@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/date.css') }}">
+<link rel = "stylesheet" href = "{{ asset('css/date.css') }}">
 @endsection
 
 
 @section('content')
-<div class="date-handle">
-<a href="{{ route('changeDay.show', ['day' => $yesterday]) }}" class="date_change"> < </a>
-<div class="date">{{ $day->format('Y-m-d') }}</div>
-<a href="{{ route('changeDay.show', ['day' => $tomorrow]) }}" class="date_change"> > </a>
+<div class = "date-handle">
+<a href = "{{ route('changeDay.show', ['day' => $yesterday]) }}" class = "date_change"> < </a>
+<div class = "date">{{ $day->format('Y-m-d') }}</div>
+<a href = "{{ route('changeDay.show', ['day' => $tomorrow]) }}" class = "date_change"> > </a>
 </div>
 
 <table>
@@ -30,7 +30,7 @@
   </tr>
   @endforeach
 </table>
-<div class="link">
+<div class = "link">
   {{$paginator->onEachSide(10)->links()}}
 </div>
 @endsection

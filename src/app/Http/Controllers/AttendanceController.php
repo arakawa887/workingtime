@@ -20,10 +20,7 @@ class AttendanceController extends Controller
     ->first();
     return view('stamping',['username' => $username,'today' => $today,'workTime' => $workTime]);
   }
-/*public function store()
-{
-  return view('stamping');
-}*/
+
 
 public function work_start()
 {
@@ -60,12 +57,12 @@ public function break_start()
 }
 public function break_finish()
 {
-    $userId = auth()->id();
-    $today = Carbon::today()->format('Y-m-d');
-    WorkTime::create([
-      'user_id' => $userId,
-      'work_status_id' => 4,
-      'working_day' => $today
+  $userId = auth()->id();
+  $today = Carbon::today()->format('Y-m-d');
+  WorkTime::create([
+    'user_id' => $userId,
+    'work_status_id' => 4,
+    'working_day' => $today
   ]);
   return redirect('/');
 }
@@ -88,7 +85,7 @@ public function date(Request $request)
     $perPage,
     $currentPage,
     ['path' => $request->url(), 'query' => $request->query()]
-);
+  );
     return view('date', compact('day','yesterday','tomorrow','paginator'));
 }
 public function changeDay($day,Request $request){

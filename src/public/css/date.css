@@ -1,6 +1,7 @@
 .date{
   display: block;
 }
+
 .date_change{
   border: 1px solid #242a39aa;
   text-decoration: none;
@@ -9,29 +10,33 @@
   margin: 0px 10px;
   text-align: center;
 }
+
 .date-handle{
   display: flex;
   justify-content: center;
   padding: 20px;
 }
+
 tr{
   border-top: 1px solid #221414c6;
+  height: 50px;
 }
+
 table{
   margin: auto;
   width: 80%;
   text-align: center;
 }
-tr{
-  height: 50px;
-}
+
 main{
   background-color: gainsboro;
 }
+
 ul{
   display: flex;
   justify-content: center;
 }
+
 .page-item{
   display: block;
   width: 20px;
@@ -41,9 +46,11 @@ ul{
   text-decoration: none;
   background-color: azure;
 }
+
 .active{
   background-color: mediumturquoise;
 }
+
 .page-link{
   text-decoration:none;
 }
