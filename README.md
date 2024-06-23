@@ -42,3 +42,4 @@ $ touch php/php.ini
 $ cd ../
 $ docker-compose up -d --build
 $ docker-compose exec php bash
+# attend
