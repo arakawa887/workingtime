@@ -31,6 +31,6 @@
   @endforeach
 </table>
 <div class = "link">
-  {{$paginator->onEachSide(10)->links()}}
+  {{$paginator->links()}}
 </div>
 @endsection

@@ -6,7 +6,7 @@
 ![スクリーンショット 2024-06-19 211150](https://github.com/arakawa887/workingtime/assets/144455733/1e5b45f8-907a-4323-a9b5-f68229df5de2)
 
 目的
-人事評価のため
+職探しのため
 
 アプリケーションURL
 http://localhost/register
@@ -26,21 +26,3 @@ Laravel Framework 8.83.27
 ER図
 ![スクリーンショット 2024-06-19 195515](https://github.com/arakawa887/workingtime/assets/144455733/d27d5c4d-4e91-48ee-8117-296c30f4a82d)
 
-
-環境構築
-mkdir workingtime
-cd workingtime
-mkdir docker src
-$ touch docker-compose.yml
-$ cd docker
-$ mkdir mysql nginx php
-$ mkdir mysql/data
-$ touch mysql/my.cnf
-$ touch nginx/default.conf
-$ touch php/Dockerfile
-$ touch php/php.ini
-$ cd ../
-$ docker-compose up -d --build
-$ docker-compose exec php bash
-# attend
-# attend

@@ -11,7 +11,9 @@
   </div>
 <form class = "form" action = "/login" method = "post">
   @csrf
+  <p class = "contents-inputted">メールアドレス</p>
   <input type = "email" name = "email" value = "{{ old('email') }}" ><br>
+  <p class = "contents-inputted">パスワード</p>
   <input type = "password" name = "password" ><br>
   <button class = "register-form__button-submit" type = "submit">ログイン</button>
 </form>
