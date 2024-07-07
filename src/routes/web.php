@@ -17,8 +17,10 @@ use App\Http\Controllers\AttendanceController;
 Route::middleware('auth')->group(function () {
         Route::get('/', [AttendanceController::class, 'index']);
     });
+Route::get('/attendance', [AttendanceController::class, 'date']);
 Route::post('/attendance', [AttendanceController::class, 'date']);
 Route::get('/attendance/{day}', [AttendanceController::class, 'changeDay'])->name('changeDay.show');
+//Route::post('/attendance/{day}', [AttendanceController::class, 'changeDay'])->name('changeDay.show');
 Route::post('/work-start', [AttendanceController::class, 'work_start']);
 Route::post('/work-finish', [AttendanceController::class, 'work_finish']);
 Route::post('/break-start', [AttendanceController::class, 'break_start']);
